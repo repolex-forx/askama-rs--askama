@@ -1,0 +1,49 @@
+[2026-11-22T14:37:28Z] === ENRICH ITERATION 1 START | repo=askama-rs/askama sha=9ae4d5bd ===
+[2026-11-22T14:37:28Z] [iter=1] PHASE START: enrich repo=askama-rs/askama sha=9ae4d5bd runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/9ae4d5bd-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/9ae4d5bdf4352b35e34106e38944c90d7a7ede3e.nq.gz
+[2026-11-22T14:37:28Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-11-22T14:37:40Z] [iter=1] AST store loaded triples=1585766 load_secs=12 mem_mb=890 MB
+[2026-11-22T14:37:40Z] [iter=1] Step 2: Finding LSP targets mem_mb=890 MB
+[2026-11-22T14:37:44Z] [iter=1] LSP targets found call_sites=10881 imports=502 extends=1 implements=204 secs=4
+[2026-11-22T14:37:47Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=890 MB
+[2026-11-22T14:37:56Z] [iter=1] Position index built positions=106982 nodes_with_types=124752 secs=10 mem_mb=890 MB
+[2026-11-22T14:37:56Z] [iter=1] Step 3: Starting LSP resolution mem_mb=890 MB already_completed_types=[] already_completed_files=0
+[2026-11-22T14:37:56Z] [iter=1] Resolving target type target_type=call_site count=10881
+[2026-11-22T14:38:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.9 files_done=0 resolved=0 errors=0 current=askama_derive/src/tests.rs
+[2026-11-22T14:39:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.4 files_done=1 resolved=243 errors=0 current=askama_derive/src/generator/expr.rs
+[2026-11-22T14:43:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.0 files_done=2 resolved=749 errors=0 current=testing/tests/macro.rs
+[2026-11-22T14:48:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.7 files_done=4 resolved=1251 errors=0 current=askama/src/filters/alloc.rs
+[2026-11-22T14:50:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=12.9 files_done=7 resolved=1658 errors=0 current=askama_derive/src/integration.rs
+[2026-11-22T14:50:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=13.4 files_done=8 resolved=1876 errors=0 current=askama_derive/src/generator/node.rs
+[2026-11-22T14:54:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=16.7 files_done=9 resolved=2428 errors=0 current=testing/tests/custom_ui.rs
+[2026-11-22T14:55:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=18.4 files_done=11 resolved=3015 errors=0 current=askama_derive/src/input.rs
+[2026-11-22T14:56:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=19.3 files_done=12 resolved=3364 errors=0 current=testing/tests/inheritance.rs
+[2026-11-22T14:57:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=20.2 files_done=14 resolved=3546 errors=0 current=askama_parser/src/expr.rs
+[2026-11-22T15:00:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=23.0 files_done=15 resolved=4173 errors=0 current=fuzzing/fuzz/src/derive.rs
+[2026-11-22T15:01:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=23.7 files_done=17 resolved=4438 errors=0 current=askama_derive/src/filter_fn.rs
+[2026-11-22T15:01:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=24.2 files_done=18 resolved=4669 errors=0 current=testing/tests/filters.rs
+[2026-11-22T15:02:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=25.0 files_done=20 resolved=4956 errors=0 current=fuzzing/fuzz/src/html/html.rs
+[2026-11-22T15:03:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=25.6 files_done=23 resolved=5161 errors=0 current=testing/tests/loop_else.rs
+[2026-11-22T15:03:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=26.5 files_done=26 resolved=5663 errors=0 current=askama_parser/src/node.rs
+[2026-11-22T15:07:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=30.1 files_done=27 resolved=6357 errors=0 current=testing/tests/if_let.rs
+[2026-11-22T15:08:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=31.0 files_done=31 resolved=6602 errors=0 current=askama/src/filters/indent.rs
+[2026-11-22T15:09:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=31.5 files_done=39 resolved=6821 errors=0 current=askama_derive/src/ascii_str.rs
+[2026-11-22T15:09:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=32.1 files_done=45 resolved=7065 errors=0 current=askama/src/filters/core.rs
+[2026-11-22T15:10:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=32.9 files_done=49 resolved=7295 errors=0 current=askama/src/filters/default.rs
+[2026-11-22T15:11:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=33.5 files_done=55 resolved=7580 errors=0 current=fuzzing/fuzz/src/lib.rs
+[2026-11-22T15:11:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=34.1 files_done=73 resolved=8033 errors=0 current=testing/tests/methods.rs
+[2026-11-22T15:12:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=34.6 files_done=83 resolved=8226 errors=0 current=testing-renamed/tests/hello-world.rs
+[2026-11-22T15:12:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=35.1 files_done=93 resolved=8416 errors=0 current=askama_derive/benches/derive-template.rs
+[2026-11-22T15:13:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=35.7 files_done=104 resolved=8562 errors=0 current=testing/tests/book_example_performance_fmt_call_fast_writable.rs
+[2026-11-22T15:13:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=36.3 files_done=142 resolved=8751 errors=0 current=testing/tests/gen_loop_else.py
+[2026-11-22T15:13:57Z] [iter=1] Target type resolved target_type=call_site resolved=8768 errors=0 secs=2161 mem_mb=890 MB
+[2026-11-22T15:13:57Z] [iter=1] Resolving target type target_type=import_statement count=502
+[2026-11-22T15:14:18Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=36.8 files_done=19 resolved=62 errors=0 current=testing/tests/ui/no-block.rs
+[2026-11-22T15:14:41Z] [iter=1] Target type resolved target_type=import_statement resolved=364 errors=0 secs=45 mem_mb=890 MB
+[2026-11-22T15:14:41Z] [iter=1] Resolving target type target_type=extends_clause count=1
+[2026-11-22T15:14:43Z] [iter=1] Target type resolved target_type=extends_clause resolved=1 errors=0 secs=1 mem_mb=890 MB
+[2026-11-22T15:14:43Z] [iter=1] Resolving target type target_type=implements_clause count=204
+[2026-11-22T15:14:54Z] [iter=1] HEARTBEAT target_type=implements_clause elapsed_min=37.4 files_done=1 resolved=8 errors=0 current=askama/src/filters/alloc.rs
+[2026-11-22T15:15:03Z] [iter=1] Target type resolved target_type=implements_clause resolved=192 errors=0 secs=21 mem_mb=890 MB
+[2026-11-22T15:45:20Z] [iter=1] Step 5: Writing final enrichment file triples=116509
+[2026-11-22T15:45:22Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/9ae4d5bdf4352b35e34106e38944c90d7a7ede3e.nq.gz size_kb=2605
+[2026-11-22T15:45:22Z] [iter=1] PHASE END: enrich elapsed_s=4074 elapsed_min=67.9 total_triples=116509
